@@ -1,5 +1,9 @@
 import { useEffect, useRef } from 'react';
-import { Chart, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Chart, PieController, ArcElement, Tooltip, Legend } from 'chart.js';
+
+// Registrando explicitamente o PieController
+Chart.register(PieController, ArcElement, Tooltip, Legend);
+
 
 Chart.register(ArcElement, Tooltip, Legend);
 
